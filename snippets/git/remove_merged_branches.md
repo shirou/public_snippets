@@ -1,4 +1,5 @@
 ---
+title: Remove merged branches
 tags:
   - git
 ---
