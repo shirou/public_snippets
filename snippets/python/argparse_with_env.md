@@ -6,18 +6,18 @@ tags:
 import argparse
 import os
 
-def parse_flag():
+def parse_flag() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="something")
 
     parser.add_argument(
-        "--end-date",
+        "--enddate",
         type=str,
-        default=os.environ.get("END_DATE", None),
-        help="end data (YYYY-MM-DD)",
+        default=os.environ.get("ENDDATE", None),
+        help="end date (YYYY-MM-DD)",
     )
 
     args = parser.parse_args()
-    if not args.config:
+    if not args.enddate:
         parser.print_usage()
         sys.exit(1)
 
