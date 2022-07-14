@@ -1,4 +1,5 @@
 ---
+title: chunk a list
 description: chunk a list to smaller lists with specified size
 ---
 def chunk(list, size):
